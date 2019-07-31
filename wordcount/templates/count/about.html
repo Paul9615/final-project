@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>급하다 급해!</title>
+  </head>
+  <style>
+    body {
+      background: red;
+      background: -webkit-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -o-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -moz-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+    }
+    .망했어요 {
+      color: white;
+      font-weight: bold;
+      font-family: Georgia, "궁서체", serif;
+      font-size: 25px;
+    }
+    #sorry {
+      color: red;
+    }
+  </style>
+  <body>
+    <div class="bonobono">
+      <a href="{% url 'main' %}"
+        ><img
+          src="https://pbs.twimg.com/media/D1dZVehWwAATF8a.jpg"
+          ,
+          weight="100"
+          ,
+          height="100"
+      /></a>
+    </div>
+    <div class="진짜">
+      <center>
+        <div class="망했어요">
+          <br />
+          <h1>만든사람</h1>
+          <P>(바쁜)전북머 멋사 7기 일동</P>
+          <p>랩실빌런 산업정보시스템공학과 15학번 구경민</p>
+          <p>인턴빌런 농업경제학과/컴퓨터공학부 13학번 김동현</p>
+          <p>(서울-전주 익스트림)인턴빌런 중어중문학과 18학번 조지영</p>
+          <p>깃사빌런 기계공학과 19학번 정승훈</p>
+          <p>특별학기빌런(강의 4개 실화?) IT응용시스템공학과 19학번 정시내</p>
+          <br /><br />
+          <h3>저퀄인 이유</h3>
+          <p>해커톤 준비하다가 과제를 알았습니다(2run...)</p>
+          <P
+            >그래서 우린 멋진 사자니까 인스타클론코딩 응용해서 포스팅까지 만들어
+            제출하자는 리얼 멋진생각을 했습니다</P
+          >
+          <p>
+            하지만 오류는 계속나고 안 돌아가고 페이스북 클론코딩으로 할까
+            고민했지만
+          </p>
+          <p>어느새 마감날이더라구요</p>
+          <p>급한대로 워드카운트를 (변명 페이지도 만들어서)만들었습니다</p>
+          <p></p>
+          <a id="sorry" href="{% url 'main' %}"
+            >죄송합니다 2학기엔 열심히 할게요(돌아가기)</a
+          >
+          <br />
+          <br />
+          <h4>심심해서 만들었어요</h4>
+          <p>L/T: 1H 30MIN(수강신청 장바구니날이라 보면서 만듬)</p>
+          <P>만드는 비용: 3200W(커피값, 아아)</P>
+        </div>
+      </center>
+    </div>
+  </body>
+</html>

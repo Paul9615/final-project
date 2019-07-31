@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final^^</title>
+  </head>
+  <style>
+    body {
+      border-radius: 10%;
+      background: red;
+      background: -webkit-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -o-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -moz-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      color: white;
+      font-family: Georgia, "궁서체", serif;
+    }
+  </style>
+  <body>
+    <div class="bonobono">
+      <a href="{% url 'main' %}"
+        ><img
+          src="https://pbs.twimg.com/media/D1dZVehWwAATF8a.jpg"
+          ,
+          weight="100"
+          ,
+          height="100"
+      /></a>
+    </div>
+    <center>
+      <h1>입력한 text는 {{ fulltext }} 이에요!</h1>
+      <!-- 입력받은 전체 텍스트 -->
+      <h1>단어 text:</h1>
+      <!-- '단어' - '단어나온 횟수' -->
+      {% for word, countTotal in dictionary %}
+      {{ word }} = {{ countTotal }}
+      <br />
+      {% endfor %}
+      <br /><br />
+      <a href="{% url 'main' %}"> 다시ㄱ? </a>
+    </center>
+  </body>
+</html>

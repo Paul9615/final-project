@@ -1,0 +1,125 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final^^</title>
+  </head>
+  <style>
+    body {
+      background: red;
+      background: -webkit-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -o-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -moz-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      color: white;
+      font-family: Georgia, "궁서체", serif;
+    }
+    .submit {
+      border-radius: 15% 15% 15% 15%;
+      background: red;
+      background: -webkit-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -o-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: -moz-linear-gradient(
+        left,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      background: linear-gradient(
+        to right,
+        red,
+        orange,
+        yellow,
+        green,
+        blue,
+        indigo,
+        violet
+      );
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="bonobono">
+      <img
+        src="https://pbs.twimg.com/media/D1dZVehWwAATF8a.jpg"
+        ,
+        weight="100"
+        ,
+        height="100"
+      />
+    </div>
+    <center>
+      <h1>급하게 만든</h1>
+      <h1>★FINAL PROJECT★</h1>
+      <h4>♥저퀄이라 죄송합니다♥</h4>
+      <a href="{% url 'about' %}">만든사람^^</a>
+      <br />
+      <br />
+      <form clss="text" action="{% url 'coun' %}">
+        <textarea cols="100" rows="40" name="fulltext"></textarea>
+        <br />
+        <br />
+        <button class="submit">너의 단어는,,,</button>
+      </form>
+    </center>
+  </body>
+</html>
